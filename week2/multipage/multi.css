@@ -1,5 +1,7 @@
 * {box-sizing: border-box;}
-
+h1 {
+  text-shadow: 2px 2px;
+}
 /* Style the navbar */
 .topnav {
   overflow: hidden;
@@ -8,6 +10,17 @@
 
 /* Navbar links */
 .topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+/* BottomNav links */
+.bottomnav a {
   float: left;
   display: block;
   color: black;
@@ -26,7 +39,7 @@
 /* Active/current link */
 .topnav a.hover {
   background-color: #2196F3;
-  color: white;
+  color: ;
 }
 
 
@@ -83,3 +96,34 @@ a:hover {
  ul {
   list-style: none;
  }
+ .bottomnav {
+
+  overflow: hidden;
+  background-color: #e9e9e9;
+
+ }
+
+ .font1 {
+   font-family: sofia;
+ }
+ .font2 {
+   font-family: "Audiowide", serif;
+ }
+
+ h3 {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
