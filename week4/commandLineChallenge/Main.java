@@ -8,7 +8,7 @@ public class Main {
 public static void main(String[] args)   { 
 
     
-/*
+
 	System.out.println("STTTTTTTAARTTTING PROGRAM!!!!!!! \n" );
 
 	System.out.println("Printing Numbers \n");
@@ -19,7 +19,7 @@ public static void main(String[] args)   {
 
 	AsciiChars.printUpperCase();
 	
-	*/
+	
 	
 	startUI();
 
@@ -70,7 +70,7 @@ public static void playGame() {
 		while (errorCheck == false) {
 			//red car
 			System.out.print("Do you have a red car? (yes, no):  ");
-			String redCar = gameScanner.next();// ######################## convert to  boolean
+			String redCar = gameScanner.next();
 			errorCheck = newNumbers.checkCar(redCar);
 			// checking error check
 			if(errorCheck == false) {
@@ -84,11 +84,11 @@ public static void playGame() {
 		errorCheck = false; //reset
 		while (errorCheck == false) {
 			System.out.print("What is your favorite pet?: ");
-			String petString = gameScanner.next();// no change
+			String petString = gameScanner.next();  // no change
 			errorCheck = newNumbers.checkPet(petString);
 			// checking error check
 			if(errorCheck == false) {
-				System.out.println("Error, wrong message. Please try again");
+				System.out.println("Error, No numbers in answer or at least 3 letter pets are needed. Please try again");
 			}		
 		}
 		
@@ -112,7 +112,7 @@ public static void playGame() {
 			errorCheck = newNumbers.checkJerseyNumber(jerseyNumber);
 			// checking error check
 			if(errorCheck == false) {
-				System.out.println("Error, wrong message. Please try again");
+				System.out.println("Error, invalid input. Please choose a number between 0 and 9, inclusively");
 			}	
 		}		
 		
@@ -120,11 +120,11 @@ public static void playGame() {
 		errorCheck = false; //reset
 		while (errorCheck == false) {
 			System.out.print("	What is two-digit model year of their car? (0-99): ");
-			String twoDigitCarModelYear = gameScanner.next(); // ######################## Convert to number
+			String twoDigitCarModelYear = gameScanner.next(); 
 			errorCheck = newNumbers.checkTwoDigit(twoDigitCarModelYear);
 			// checking error check
 			if(errorCheck == false) {
-				System.out.println("Error, wrong message. Please try again");
+				System.out.println("Error, invalid input. Please choose a number between 0 and 99, inclusively");
 				}	
 		}	
 		//first name - actor 
@@ -143,22 +143,31 @@ public static void playGame() {
 		errorCheck = false; //reset
 		while (errorCheck == false) {
 			System.out.print("Enter a random number between 1 and 50.");
-			String numberBetweenOneAndFifty = gameScanner.next();// ####################### Convert to Number
+			String numberBetweenOneAndFifty = gameScanner.next();
 			errorCheck = newNumbers.checkNumberInRange(numberBetweenOneAndFifty);
 			// checking error check
 			if(errorCheck == false) {
-				System.out.println("Error, wrong message. Please try again");
+				System.out.println("Error, invalid input. Please choose a number between 1 and 50, inclusively");
 				}	
-		}	
+		}
+		newNumbers.generateNumbers();
+		newNumbers.printLotteryNumbers();
 
+		String playAgain = gameScanner.next();
 		
+		if(playAgain.equals( "y" ) || playAgain.equals( "yes" ) ) {
+			playGame();
+		}
+		else {
+			exitGracefully();
+		}
 		
 		
 	}
 }
 
 public static void exitGracefully() {
-	
+	System.out.println("Thank you for playing! Exiting now...");
 }
 
 
