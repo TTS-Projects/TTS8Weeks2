@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import CourseDataService from '../service/CourseDataService';
+import NavBarBottom from './bottomBar/NavBarBottom';
+import NavBar from './topBar/NavBar';
+import {Link} from 'react-router-dom'
+
 
 const INSTRUCTOR = 'in28minutes'
 
@@ -54,6 +58,11 @@ class ListCoursesComponent extends Component {
         console.log('render')
         return (
             <div className="container">
+                <div className="topNav">
+                    <h1>hi<Link to="/survey" > hihi
+                        </Link>
+                    </h1>
+                </div>
                 <h3>All Courses</h3>
                 {this.state.message && <div class="alert alert-success">{this.state.message}</div>}
                 <div className="container">
@@ -84,6 +93,7 @@ class ListCoursesComponent extends Component {
                         <button className="btn btn-success" onClick={this.addCourseClicked}>Add</button>
                     </div>
                 </div>
+                <NavBarBottom/>
             </div>
         )
     }

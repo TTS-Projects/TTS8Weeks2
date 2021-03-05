@@ -98,7 +98,6 @@ class CourseComponent extends Component {
                             )
                         }
                     </Formik>
-
                 </div>
             </div>
         )
