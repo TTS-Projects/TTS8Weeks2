@@ -13,6 +13,9 @@ class NavBarBottom extends Component {
             <div>
             <br></br>
             <h1 style={mystyle}>Bottom Nav!</h1>
+              <h1>Fill out a survey <Link to="/survey" > here
+                  </Link>
+              </h1>
             </div>
           );
         }
