@@ -7,7 +7,6 @@ class Survey extends Component {
         return (
             <div className="container">
                 <h3>Please write me a survey</h3>
-
             </div>
         )
     }
