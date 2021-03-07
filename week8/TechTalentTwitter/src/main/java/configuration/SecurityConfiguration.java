@@ -13,7 +13,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Value;
 
-import lombok.Value;
+//import lombok.Value;
 
 @Configuration
 @EnableWebSecurity

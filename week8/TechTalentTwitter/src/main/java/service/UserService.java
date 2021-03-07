@@ -3,7 +3,16 @@ package service;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import model.Role;
+import model.User;
+import repository.RoleRepository;
+import repository.UserRepository;
 
 @Service
 public class UserService {
