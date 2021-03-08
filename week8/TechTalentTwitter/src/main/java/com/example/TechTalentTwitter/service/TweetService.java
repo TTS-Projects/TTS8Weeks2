@@ -1,4 +1,4 @@
-package service;
+package com.example.TechTalentTwitter.service;
 
 
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import model.Tweet;
-import model.User;
-import repository.TweetRepository;
+import com.example.TechTalentTwitter.model.Tweet;
+import com.example.TechTalentTwitter.model.User;
+import com.example.TechTalentTwitter.repository.TweetRepository;
 
 @Service
 public class TweetService {

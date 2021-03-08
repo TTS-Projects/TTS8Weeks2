@@ -1,4 +1,4 @@
-package service;
+package com.example.TechTalentTwitter.service;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -9,10 +9,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import model.Role;
-import model.User;
-import repository.RoleRepository;
-import repository.UserRepository;
+import com.example.TechTalentTwitter.model.Role;
+import com.example.TechTalentTwitter.model.User;
+import com.example.TechTalentTwitter.repository.RoleRepository;
+import com.example.TechTalentTwitter.repository.UserRepository;
 
 @Service
 public class UserService {

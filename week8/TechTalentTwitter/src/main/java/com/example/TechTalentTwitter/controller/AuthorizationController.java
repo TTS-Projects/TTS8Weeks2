@@ -1,4 +1,4 @@
-package controller;
+package com.example.TechTalentTwitter.controller;
 
 import javax.validation.Valid;
 
@@ -9,8 +9,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import model.User;
-import service.UserService;
+import com.example.TechTalentTwitter.model.User;
+import com.example.TechTalentTwitter.service.UserService;
 
 @Controller
 public class AuthorizationController {

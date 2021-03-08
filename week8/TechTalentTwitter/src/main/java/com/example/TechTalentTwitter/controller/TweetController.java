@@ -1,4 +1,4 @@
-package controller;
+package com.example.TechTalentTwitter.controller;
 
 
 import java.util.List;
@@ -12,10 +12,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import model.Tweet;
-import model.User;
-import service.TweetService;
-import service.UserService;
+import com.example.TechTalentTwitter.model.Tweet;
+import com.example.TechTalentTwitter.model.User;
+import com.example.TechTalentTwitter.service.TweetService;
+import com.example.TechTalentTwitter.service.UserService;
 
 @Controller
 public class TweetController {

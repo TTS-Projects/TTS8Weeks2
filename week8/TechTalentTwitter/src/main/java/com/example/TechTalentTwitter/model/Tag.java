@@ -1,4 +1,4 @@
-package model;
+package com.example.TechTalentTwitter.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,10 +12,10 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Role {
+public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "role_id")
+    @Column(name = "tag_id")
     private Long id;
     private String role;
 

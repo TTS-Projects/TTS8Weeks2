@@ -1,4 +1,4 @@
-package repository;
+package com.example.TechTalentTwitter.repository;
 
 
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import model.Tweet;
-import model.User;
+import com.example.TechTalentTwitter.model.Tweet;
+import com.example.TechTalentTwitter.model.User;
 
 @Repository
 public interface TweetRepository extends CrudRepository<Tweet, Long> {
