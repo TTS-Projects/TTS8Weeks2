@@ -3,6 +3,7 @@ import ListCoursesComponent from './ListCoursesComponent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import CourseComponent from './CourseComponent';
 import Survey from './Survey';
+import Home from './Home'
 //import NavBarBottom from './NavBarBottom';
 //import NavBar from './NavBar';
 
@@ -13,7 +14,8 @@ class InstructorApp extends Component {
                 <>
                     <h1>Instructor Application</h1>
                     <Switch>
-                        <Route path="/" exact component={ListCoursesComponent} />
+                        <Route path="/" exact component={Home} />
+                        <Route path="/co" exact component={ListCoursesComponent} />
                         {/*
                         <Route path="/" exact component={NavBarBottom} />
                         <Route path="/" exact component={NavBar} /> 

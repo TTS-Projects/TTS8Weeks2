@@ -60,7 +60,7 @@ class ListCoursesComponent extends Component {
                 <div className="topNav">
                     <NavBar/>
                 </div>
-                <h3>All Courses</h3>
+                <h3>AAll CoursesAll CoursesAll CoursesAll CoursesAll CoursesAll CoursesAll Coursesll Courses</h3>
                 {this.state.message && <div class="alert alert-success">{this.state.message}</div>}
                 <div className="container">
                     <table className="table">
