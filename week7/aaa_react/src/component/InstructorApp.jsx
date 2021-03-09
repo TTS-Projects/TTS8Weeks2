@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import CourseComponent from './CourseComponent';
 import Survey from './Survey';
 import Home from './Home'
-//import NavBarBottom from './NavBarBottom';
-//import NavBar from './NavBar';
 
 class InstructorApp extends Component {
     render() {
