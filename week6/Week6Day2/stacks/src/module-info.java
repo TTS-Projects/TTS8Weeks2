@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Mike
- *
- */
-module stacks {
-}
